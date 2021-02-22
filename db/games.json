@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title" : "Call of Duty: Black Ops: Cold War",
+        "price" : 90
+    },
+    {
+        "id" : 2,
+        "title" : "Assassin's Creed: Valhalla",
+        "price" : 90
+    },
+    {
+        "id" : 3,
+        "title" : "Super Smash Bros. Ultimate",
+        "price" : 70
+    },
+    {
+        "id" : 4,
+        "title" : "NBA 2K21",
+        "price" : 60
+    },
+    {
+        "id" : 5,
+        "title" : "Valheim",
+        "price" : 30
+    }
+]
