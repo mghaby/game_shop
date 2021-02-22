@@ -1,0 +1,52 @@
+[
+    {
+        "id" : 1,
+        "title" : "Call of Duty: Black Ops: Cold War",
+        "Price" : 90
+    },
+    {
+        "id" : 2,
+        "title" : "Assassin's Creed: Valhalla",
+        "Price" : 90
+    },
+    {
+        "id" : 3,
+        "title" : "Marvel's Spider-Man: Miles Morales",
+        "Price" : 65
+    },
+    {
+        "id" : 4,
+        "title" : "Madden NFL 21",
+        "Price" : 70
+    },
+    {
+        "id" : 5,
+        "title" : "Animal Crossing: New Horizons",
+        "Price" : 50
+    },
+    {
+        "id" : 6,
+        "title" : "Mario Kart 8: Deluxe",
+        "Price" : 50
+    },
+    {
+        "id" : 7,
+        "title" : "Call of Duty: Modern Warfare",
+        "Price" : 60
+    },
+    {
+        "id" : 8,
+        "title" : "Super Smash Bros. Ultimate",
+        "Price" : 70
+    },
+    {
+        "id" : 9,
+        "title" : "NBA 2K21",
+        "Price" : 60
+    },
+    {
+        "id" : 10,
+        "title" : "Valheim",
+        "Price" : 30
+    }
+]
