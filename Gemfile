@@ -8,3 +8,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "tty-prompt"
 gem "json", "~> 2.5"
+
+gem "tty-table", "~> 0.12.0"

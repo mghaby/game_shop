@@ -1,27 +1,27 @@
 [
     {
         "id" : 1,
-        "title" : "Hyper X Headphones",
+        "name" : "Hyper X Headphones",
         "price" : 70
     },
     {
         "id" : 2,
-        "title" : "Logitech Keyboard",
+        "name" : "Logitech Keyboard",
         "price" : 200
     },
     {
         "id" : 3,
-        "title" : "Razer Mouse",
+        "name" : "Razer Mouse",
         "price" : 120
     },
     {
         "id" : 4,
-        "title" : "Razer Mousepad",
+        "name" : "Razer Mousepad",
         "price" : 30
     },
     {
         "id" : 5,
-        "title" : "Sony Speakers",
+        "name" : "Sony Speakers",
         "price" : 120
     }
 ]
