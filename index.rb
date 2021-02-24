@@ -94,7 +94,7 @@ when true
                 when "XboxX"
                 cart.add_console(500)
                 puts "Successfully added Xbox Series X to Cart!"
-                
+
                 end
 
 
@@ -102,11 +102,55 @@ when true
             puts game_table.render(:ascii)
             puts ""
                 selection_game = prompt.select("Which game would you like?", %w(COD AC:V SSB NBA Valheim))
+                case selection_game
+                when "COD"
+                cart.add_game(90)
+                puts "Successfully added Call of Duty: Black Ops: Cold War to Cart!"
+
+                when "AC:V"
+                cart.add_game(90)
+                puts "Successfully added Assassin's Creed: Valhalla to Cart!"
+
+                when "SSB"
+                cart.add_game(70)
+                puts "Successfully added Super Smash Bros. Ultimate to Cart!"
+                
+                when "NBA"
+                cart.add_game(60)
+                puts "Successfully added NBA 2K21 to Cart!"
+
+                when "Valheim"
+                cart.add_game(30)
+                puts "Successfully added Valheim to Cart!"
+
+                end
 
         when "Peripherals"
             puts peripheral_table.render(:ascii)
             puts ""
                 selection_peripheral = prompt.select("Which peripheral would you like?", %w(Headphones Keyboard Mouse Mousepad Speakers))
+                case selection_peripheral
+                when "Headphones"
+                cart.add_peripheral(70)
+                puts "Successfully added Hyper X Headphones to Cart!"
+
+                when "Keyboard"
+                cart.add_peripheral(200)
+                puts "Successfully added Logitech Keyboard to Cart!"
+
+                when "Mouse"
+                cart.add_peripheral(120)
+                puts "Successfully added Razer Mouse to Cart!"
+
+                when "Mousepad"
+                cart.add_peripheral(30)
+                puts "Successfully added Razer Mousepad to Cart!"
+
+                when "Speakers"
+                cart.add_peripheral(120)
+                puts "Successfully added Sony Speakers to Cart!"
+                
+                end
 
         end
     end
