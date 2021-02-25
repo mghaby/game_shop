@@ -76,24 +76,68 @@ when true
                 case selection_console
                 when "PS4"
                 cart.add_console(400)
+                puts ""
                 puts "Successfully added PS4 to Cart!"
-                # use above as template for everything else
+                    selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "PS5"
                 cart.add_console(700)
+                puts ""
                 puts "Successfully added PS4 to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Switch"
                 cart.add_console(450)
+                puts ""
                 puts "Successfully added Nintendo Switch to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "XboxOne"
                 cart.add_console(300)
+                puts ""
                 puts "Successfully added Xbox One to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "XboxX"
                 cart.add_console(500)
+                puts ""
                 puts "Successfully added Xbox Series X to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 end
 
@@ -105,23 +149,68 @@ when true
                 case selection_game
                 when "COD"
                 cart.add_game(90)
+                puts ""
                 puts "Successfully added Call of Duty: Black Ops: Cold War to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "AC:V"
                 cart.add_game(90)
+                puts ""
                 puts "Successfully added Assassin's Creed: Valhalla to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "SSB"
                 cart.add_game(70)
+                puts ""
                 puts "Successfully added Super Smash Bros. Ultimate to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
                 
                 when "NBA"
                 cart.add_game(60)
+                puts ""
                 puts "Successfully added NBA 2K21 to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Valheim"
                 cart.add_game(30)
+                puts ""
                 puts "Successfully added Valheim to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 end
 
@@ -132,28 +221,74 @@ when true
                 case selection_peripheral
                 when "Headphones"
                 cart.add_peripheral(70)
+                puts ""
                 puts "Successfully added Hyper X Headphones to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Keyboard"
                 cart.add_peripheral(200)
+                puts ""
                 puts "Successfully added Logitech Keyboard to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Mouse"
                 cart.add_peripheral(120)
+                puts ""
                 puts "Successfully added Razer Mouse to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Mousepad"
                 cart.add_peripheral(30)
+                puts ""
                 puts "Successfully added Razer Mousepad to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
 
                 when "Speakers"
                 cart.add_peripheral(120)
+                puts ""
                 puts "Successfully added Sony Speakers to Cart!"
+                selection_loop = prompt.yes?("Would you like to purchase anything else?")
+                    case selection_loop
+                        when true
+                            puts ""
+                        when false
+                            puts ""
+                            break
+                    end
                 
                 end
 
         end
     end
+    puts "ur total is __"
 when false
     puts leave
 end 
