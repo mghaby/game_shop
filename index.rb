@@ -288,7 +288,7 @@ when true
 
         end
     end
-    puts "ur total is __"
+    puts "Your total is $ #{cart.combine}"
 when false
     puts leave
 end 
