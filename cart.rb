@@ -19,11 +19,6 @@ class Cart
         @peripherals << input
     end
 
-    def discount
-        # need an if statement here // check against notes for the discounts
-        @games.count
-    end
-
     def combine
         combined = @consoles.sum + @games.sum + @peripherals.sum
     end
