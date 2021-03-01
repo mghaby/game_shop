@@ -289,43 +289,20 @@ when true
         end
     end
 
-    # def combine_game
-    #     summed_games = @games.sum
-    # end
-
-    # def discount
-    #     discount_arr = @games.count
-    #     case discount_arr
-    #     when discount_arr == 3..4
-    #         temp = combine_game
-    #         discounted = combine_game * 0.1 + temp
-
-    #     when discount_arr == 5..9
-    #         temp = combine_game
-    #         discounted = combine_game * 0.15 + temp
-
-    #     when discount_arr == 10..99
-    #         temp = combine_game
-    #         discount_arr = combine_game * 0.25 + temp
-            
-    #     end
-    # end
-
-    # this code works ----------- make it a case/when loop
-    puts cart.games.count
-    discount_1 = cart.games.sum * 0.1
-    puts cart.games.sum - discount_1
-    # --------------------
-
     games_count = cart.games.count
     case games_count
-    when games_count == 3..4
-        temp = cart.games.sum
-        cart.games.sum * 0.1 + temp
+    when 3..4
+        temp = cart.games.sum * 0.1 
+        cart.games[0] = cart.games.sum - temp.to_i
+
+    when 5..9
+        temp = cart.games.sum * 0.15
+        cart.games[0] = cart.games.sum - temp.to_i
+    
+    when 10..99
+        temp = cart.games.sum * 0.25 
+        cart.games[0] = cart.games.sum - temp.to_i
     end
-
-
-
 
     puts "Your total is $ #{cart.combine}"
 when false

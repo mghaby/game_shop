@@ -20,7 +20,7 @@ class Cart
     end
 
     def combine
-        combined = @consoles.sum + @games.sum + @peripherals.sum
+        combined = @consoles.sum + @games[0] + @peripherals.sum
     end
 
 
