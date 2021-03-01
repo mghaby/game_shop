@@ -142,7 +142,6 @@ when true
                             puts ""
                             break
                     end
-
                 end
 
 
@@ -296,6 +295,10 @@ when true
     # discount & calculation logic 
     games_count = cart.games.count
     case games_count
+
+    when 0..2
+        cart.games[0] = (cart.games[0] || 0) + (cart.games[1] || 0)
+
     when 3..4
         temp = cart.games.sum * 0.1 
         cart.games[0] = cart.games.sum - temp.to_i
