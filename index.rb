@@ -1,3 +1,4 @@
+# dependencies
 require "tty-prompt"
 require 'tty-table'
 require 'json'
@@ -8,6 +9,7 @@ games_hash = JSON.parse(File.read('./db/games.json'))
 peripherals_hash = JSON.parse(File.read('./db/peripherals.json'))
 require_relative './cart'
 
+# table setups 
 game_table = TTY::Table.new(["Game","Price"], [[games_hash[0]["name"], games_hash[0]["price"]],
     [games_hash[1]["name"], games_hash[1]["price"]],
     [games_hash[2]["name"], games_hash[2]["price"]],
@@ -60,8 +62,10 @@ _|   |_                     _|   |_
 
 "
 # ASCII ART ABOVE BY Sher
+
 cart = Cart.new
 
+# main loop
 yn = prompt.yes?("Would you like to enter Mark's Game Store?")
 puts ""
 case yn
@@ -289,6 +293,7 @@ when true
         end
     end
 
+    # discount & calculation logic 
     games_count = cart.games.count
     case games_count
     when 3..4
