@@ -118,74 +118,43 @@ when true
         when "Games"
             puts game_table.render(:ascii)
             puts ""
-                selection_game = prompt.select("Which game would you like?", %w(COD AC:V SSB NBA Valheim))
+            loop do
+                selection_game = prompt.select("Which game would you like?", %w(COD AC:V SSB NBA Valheim back))
                 case selection_game
                 when "COD"
                 cart.add_game(90)
                 puts ""
                 puts "Successfully added Call of Duty: Black Ops: Cold War to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "AC:V"
                 cart.add_game(90)
                 puts ""
                 puts "Successfully added Assassin's Creed: Valhalla to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "SSB"
                 cart.add_game(70)
                 puts ""
                 puts "Successfully added Super Smash Bros. Ultimate to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
                 
                 when "NBA"
                 cart.add_game(60)
                 puts ""
                 puts "Successfully added NBA 2K21 to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Valheim"
                 cart.add_game(30)
                 puts ""
                 puts "Successfully added Valheim to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
+                when "back"
+                break
                 end
+            end
 
         when "Peripherals"
             puts peripheral_table.render(:ascii)
