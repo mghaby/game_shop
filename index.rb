@@ -159,74 +159,43 @@ when true
         when "Peripherals"
             puts peripheral_table.render(:ascii)
             puts ""
-                selection_peripheral = prompt.select("Which peripheral would you like?", %w(Headphones Keyboard Mouse Mousepad Speakers))
+            loop do
+                selection_peripheral = prompt.select("Which peripheral would you like?", %w(Headphones Keyboard Mouse Mousepad Speakers back))
                 case selection_peripheral
                 when "Headphones"
                 cart.add_peripheral(70)
                 puts ""
                 puts "Successfully added Hyper X Headphones to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Keyboard"
                 cart.add_peripheral(200)
                 puts ""
                 puts "Successfully added Logitech Keyboard to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Mouse"
                 cart.add_peripheral(120)
                 puts ""
                 puts "Successfully added Razer Mouse to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Mousepad"
                 cart.add_peripheral(30)
                 puts ""
                 puts "Successfully added Razer Mousepad to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Speakers"
                 cart.add_peripheral(120)
                 puts ""
                 puts "Successfully added Sony Speakers to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
-                
+                break
+
+                when "back"
+                break
                 end
+            end
 
 
             when "Finish"
