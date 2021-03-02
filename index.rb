@@ -3,7 +3,6 @@ require "tty-prompt"
 require 'tty-table'
 require 'json'
 prompt = TTY::Prompt.new
-leave = "Thanks for visiting Mark's Game Store!"
 consoles_hash = JSON.parse(File.read('./db/consoles.json'))
 games_hash = JSON.parse(File.read('./db/games.json'))
 peripherals_hash = JSON.parse(File.read('./db/peripherals.json'))
@@ -197,8 +196,7 @@ when true
                 end
             end
 
-
-            when "Finish"
+        when "Finish"
             break
         end
     end
@@ -206,7 +204,6 @@ when true
     # discount & calculation logic 
     games_count = cart.games.count
     case games_count
-
     when 0..2
         cart.games[0] = (cart.games[0] || 0) + (cart.games[1] || 0)
 
@@ -225,5 +222,5 @@ when true
 
     puts "Your total is $ #{cart.combine}"
 when false
-    puts leave
+    puts "Thanks for visiting Mark's Game Store!"
 end 
