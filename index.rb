@@ -71,78 +71,48 @@ puts ""
 case yn
 when true
     loop do 
-        selection = prompt.select("What would you like to purchase?", %w(Consoles Games Peripherals))
+        selection = prompt.select("What would you like to purchase?", %w(Consoles Games Peripherals Finish))
         case selection
         when "Consoles"
             puts console_table.render(:ascii)
             puts ""
-                selection_console = prompt.select("Which console would you like?", %w(PS4 PS5 Switch XboxOne XboxX))
+            loop do
+                selection_console = prompt.select("Which console would you like?", %w(PS4 PS5 Switch XboxOne XboxX back))
                 case selection_console
                 when "PS4"
                 cart.add_console(400)
                 puts ""
                 puts "Successfully added PS4 to Cart!"
-                    selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "PS5"
                 cart.add_console(700)
                 puts ""
                 puts "Successfully added PS4 to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "Switch"
                 cart.add_console(450)
                 puts ""
                 puts "Successfully added Nintendo Switch to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "XboxOne"
                 cart.add_console(300)
                 puts ""
                 puts "Successfully added Xbox One to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
 
                 when "XboxX"
                 cart.add_console(500)
                 puts ""
                 puts "Successfully added Xbox Series X to Cart!"
-                selection_loop = prompt.yes?("Would you like to purchase anything else?")
-                    case selection_loop
-                        when true
-                            puts ""
-                        when false
-                            puts ""
-                            break
-                    end
+                break
+                
+                when "back"
+                break
                 end
+            end 
 
 
         when "Games"
@@ -289,6 +259,9 @@ when true
                 
                 end
 
+
+            when "Finish"
+            break
         end
     end
 
