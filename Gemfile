@@ -10,3 +10,5 @@ gem "tty-prompt"
 gem "json", "~> 2.5"
 
 gem "tty-table", "~> 0.12.0"
+
+gem "rspec", "~> 3.10"
